@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+:root{
+    --texto-principal: 'Plus Jakarta Sans', sans-serif;
+
+    --fonte-cor-titulo: rgba(19, 24, 63, 1);
+    --fonte-cor-texto-primaria: rgba(131, 134, 154, 1);
+    --fonte-cor-texto-secundaria: rgba(255, 255, 255, 1);
+    --fonte-cor-link: rgba(247, 71, 128, 1);
+    --fonte-cor-link-acionado: rgba(255, 167, 195, 1);
+
+    --background-itens: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --background-principal: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    --background-secundario: rgba(19, 24, 63, 1);
+    --background-quadrados: rgba(255, 255, 255, 1);
+    --background-botao-rodape:linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --background-botao-clique1: linear-gradient(180deg, rgba(255, 111, 72, 0.5), rgba(240, 42, 166, 0.5));
+    --background-botao-clique2: rgba(102, 108, 163, 1);
+    --background-botao-clique3: linear-gradient(180deg,rgba(72, 81, 255, 0.5), rgba(240, 42, 166, 0.5));
+}
+
+body{
+    font-family: var(--texto-principal);
+    box-sizing: content-box;
+    width: auto;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(assets/Group\ 19.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.cabecalho__apresentacao__logo{
+    display: inline-block;
+    padding: 38.75px 0 0 165.79px;
+}
+
+.cabecalho__apresentacao__informacao{
+    padding: 186px 162px 226px 165px;
+    width: 40%;
+}
+
+
+.cabecalho__apresentacao__informacao__titulo{
+    color: var(--fonte-cor-titulo);
+    font-weight: 800;
+    font-size: 56px;
+    padding-bottom: 29px;
+}
+
+.cabecalho__apresentacao__informacao__texto{
+    color: var(--fonte-cor-texto-primaria);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 40px;
+}
+
+.cabecalho__apresentacao__informacao__botao{
+    background: var(--background-itens);
+    padding: 19px 31px 16px 32px;
+    border: transparent;
+    border-radius: 31.5px;
+    color: var(--fonte-cor-texto-secundaria);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cabecalho__apresentacao__imagem-mobile{
+    display: none;
+}
+
+.cabecalho__apresentacao__informacao__botao:hover{
+    cursor: pointer;
+    background: var(--background-botao-clique1);
+}
+
+.cabecalho__imagem__botao{
+    position: absolute;
+    right: 10%;
+    top: 24px;
+    padding: 14px 31px;
+    color: var(--fonte-cor-texto-secundaria);
+    font-weight: 700;
+    font-size:18px;
+    background: var(--background-secundario);
+    border: transparent;
+    border-radius: 28px;
+}
+
+.cabecalho__imagem__botao:hover{
+    cursor: pointer;
+    background: var(--background-botao-clique2);
+}
+
+.principal{
+    background: var(--background-principal);
+    padding: 47px 0 140px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.principal__informacoes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items:end;
+    column-gap: 30px;
+    row-gap: 56px;
+}
+
+.principal__checkout{
+    background: var(--background-itens);
+    width: 350px;
+    height: 322px;
+    border-radius: 15px;
+}
+
+.principal__checkout__texto{
+    color: var(--fonte-cor-texto-secundaria);
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 64px 32px 128px 32px;
+}
+
+.principal__cursos{
+    width: 350px;
+    height: 322px;
+    border-radius: 15px;
+    border: transparent;
+    background: var(--background-quadrados);
+}
+
+.principal__cursos__imagem{
+    padding-left: 32px;
+    position: relative;
+    top: -32px;
+}
+
+.principal__cursos__informacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 286px;
+    height: 218px;
+    padding: 0 32px 40px 32px;
+}
+
+.principal__cursos__informacao__titulo{
+    color: var(--fonte-cor-titulo);
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.principal__cursos__informacao__texto{
+    color: var(--fonte-cor-texto-primaria);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.principal__cursos__informacao__link{
+    text-decoration: none;
+    color: var(--fonte-cor-link);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.principal__cursos__informacao__link:hover{
+    color: var(--fonte-cor-link-acionado);
+}
+
+.rodape{
+    background: var(--background-secundario);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 165px;
+}
+
+.rodape__botao{
+    background: var(--background-botao-rodape);
+    padding: 14px 32px;
+    border: transparent;
+    border-radius: 28px;
+    color: var(--fonte-cor-texto-secundaria);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.rodape__botao:hover{
+    background: var(--background-botao-clique3);
+    cursor: pointer;
+}
+
+@media(max-width: 1220px){
+
+    .principal__informacoes{
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+
+    .cabecalho{
+        background-image: url("assets/Group\ 12.png");
+    }
+
+    .cabecalho__apresentacao__informacao{
+        width: 40%;
+        padding: 99px 162px 226px 39px;
+    }
+}
+
+@media(max-width: 768px){
+    .cabecalho{
+        background-size:  50%;
+    }
+
+    .cabecalho__apresentacao__informacao{
+        width: 398px;
+        height: 294px;
+    }
+
+    .cabecalho__apresentacao__informacao__titulo{
+        font-size: 40px;
+    }
+
+    .cabecalho__apresentacao__informacao__texto{
+        font-size: 16px;
+    }
+
+    .principal__checkout{
+        width: 339px;
+        height: 284px;
+    }
+
+    .principal__cursos{
+        width: 339px;
+        height: 284px;
+    }
+}
+
+@media(max-width: 730px){
+    .principal__informacoes{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .cabecalho{
+        background-image: none;
+    }
+
+    .cabecalho__apresentacao__logo{
+        padding: 22px 16px 45px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalho__imagem__botao{
+        position:static;
+    }
+
+    .cabecalho__apresentacao__informacao{
+        padding: 38px 16px 46px 16px;
+        align-items: center;
+        width: auto;
+    }
+
+    .cabecalho__apresentacao__imagem-mobile{
+        display: block;
+        text-align: center;
+    }
+
+    .rodape{
+        padding: 0 16px;
+    }
+}
