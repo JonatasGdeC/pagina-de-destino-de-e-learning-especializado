@@ -23,12 +23,13 @@ body{
     font-family: var(--texto-principal);
     box-sizing: content-box;
     width: auto;
+    height: 100vh;
 }
 
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    background-image: url(assets/Group\ 19.png);
+    background-image: url(assets/imagem-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -56,6 +57,7 @@ body{
     color: var(--fonte-cor-texto-primaria);
     font-weight: 500;
     font-size: 18px;
+    padding-right: 18%;
     line-height: 28px;
     padding-bottom: 40px;
 }
@@ -132,6 +134,7 @@ body{
 .principal__cursos{
     width: 350px;
     height: 322px;
+    padding-bottom: 40px;
     border-radius: 15px;
     border: transparent;
     background: var(--background-quadrados);
@@ -208,7 +211,7 @@ body{
     }
 
     .cabecalho{
-        background-image: url("assets/Group\ 12.png");
+        background-image: url("assets/imagem-tablet.png");
     }
 
     .cabecalho__apresentacao__informacao{
@@ -229,10 +232,6 @@ body{
 
     .cabecalho__apresentacao__informacao__titulo{
         font-size: 40px;
-    }
-
-    .cabecalho__apresentacao__informacao__texto{
-        font-size: 16px;
     }
 
     .principal__checkout{
@@ -277,6 +276,10 @@ body{
     .cabecalho__apresentacao__imagem-mobile{
         display: block;
         text-align: center;
+    }
+
+    .cabecalho__apresentacao__informacao__texto{
+        padding-right: 0;
     }
 
     .rodape{
